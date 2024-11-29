@@ -8,9 +8,18 @@ export default defineConfig({
     react(),
     federation({
       name: "app",
+      // @ts-ignore
       remotes: {
-        remoteApp: "http://localhost:5001/assets/remoteEntry.js",
-        remoteWebpackApp: "http://localhost:8080/remoteEntry.js",
+        remoteApp: {
+          external: "http://localhost:5001/assets/remoteEntry.js",
+          from: "vite",
+          format: "esm",
+        },
+        remoteWebpackApp: {
+          external: "http://localhost:8080/remoteEntry.js",
+          format: "esm",
+          from: "webpack",
+        },
       },
       // shared: ["react", "react-dom"],
     }),

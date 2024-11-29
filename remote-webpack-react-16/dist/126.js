@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkremote_webpack_react_16=self.webpackChunkremote_webpack_react_16||[]).push([[126],{126:(e,t,c)=>{function a(){return React.createElement("div",null,React.createElement("p",null,"React App Webpack 16"))}c.r(t),c.d(t,{default:()=>a})}}]);
