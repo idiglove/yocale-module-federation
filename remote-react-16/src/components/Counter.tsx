@@ -4,7 +4,17 @@ const Counter = ({ CounterContext }) => {
   return (
     <CounterContext.Consumer>
       {({ count }: { count: number }) => {
-        return <p>This is a react 16 app. This count from context: {count}</p>;
+        return (
+          <p
+            style={{
+              backgroundColor: "lightblue",
+              padding: "1rem",
+              color: "black",
+            }}
+          >
+            This is a React 16 Vite app. This is count from context: {count}
+          </p>
+        );
       }}
     </CounterContext.Consumer>
   );

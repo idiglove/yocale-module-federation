@@ -16,7 +16,7 @@ export default function App() {
             padding: "16px",
           }}
         >
-          <p>React App Webpack 16</p>
+          <p>React 16 Webpack App</p>
           <p>Count from Context: {count}</p>
           <button onClick={setCount}>Count Up</button>
         </div>

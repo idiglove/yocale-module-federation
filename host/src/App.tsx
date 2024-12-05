@@ -7,11 +7,20 @@ import CounterProvider from "./context/CounterContext/CounterProvider";
 function App() {
   return (
     <CounterProvider>
-      <div>
+      <div className="host__wrapper">
         <h1>This is the host</h1>
-
-        <React16App />
-        <React16WebpackApp />
+        <div className='host__content'>
+          <div>
+            <ul>
+              <li>Shared Nav Item 1</li>
+              <li>Shared Nav Item 2</li>
+            </ul>
+          </div>
+          <div>
+            <React16App />
+            <React16WebpackApp />
+          </div>
+        </div>
       </div>
     </CounterProvider>
   );
