@@ -1,11 +1,15 @@
 import "./App.css";
+import Counter from "./components/Counter";
 
 function App() {
-  return (
-    <>
-      <p>This is a react 16 app</p>
-    </>
-  );
+  // @ts-ignore
+  const CounterContext = window.CounterContext;
+
+  if (!CounterContext) {
+    return <p>CounterContext not found</p>;
+  }
+
+  return <Counter CounterContext={CounterContext} />;
 }
 
 export default App;
